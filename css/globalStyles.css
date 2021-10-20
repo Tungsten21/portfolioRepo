@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0b0c10;
+}
+
+@media screen and (min-width: 940px) {
+
+    .headerContent{
+        width: 80%;
+        height: 15vh;
+        /* background-color: whitesmoke; */
+        color: whitesmoke;
+        margin: 0 auto;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .headerContent > h1{
+        font-size: 6rem;
+    }
+    
+    .headerContent > p{
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+
+    .pageBreak{
+        width: 75%;
+        height: 2rem;
+        background-color: black;
+        margin: 2.5em auto;
+    }
+
+    .menu{
+        min-width: 795px;
+        width: 85%;
+        height: 12.5vh;
+        background: rgb(167,167,167);
+        background: linear-gradient(180deg, rgba(167,167,167,1) 0%, rgba(122,122,122,1) 100%);
+        margin: 0 auto;
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid #66fcf1; */
+    }
+
+    .navItems{
+        list-style: none;
+        width: 100%;
+        height: 75%;
+        /* background-color: cadetblue; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-style: italic;
+        color: white;
+        font-weight: bold;
+    }
+
+    .navDivider{
+        margin: 0 1.5rem;
+        min-width: 3px;
+        height: 5rem;
+        background-color: #66fcf1;
+        border-radius: 40%;
+    }
+
+    .navItem{
+        display: flex;
+        float: left;
+        font-size: 2.5rem;
+        align-items: center;
+        text-align: center;
+        /* background-color: rebeccapurple; */
+    }
+
+    .navButton{
+        /* background-color: #66fcf1; */
+        border-radius: 1rem;
+    }
+
+    .navButton:hover{
+        padding: 2rem;
+        background-color: #66fcf1;
+        transition: 0.5s;
+    }
+
+    .aboutContainer, .contactContainer, .skillsContainer{
+        width: 85%;
+        height: 50vh;
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 1.25rem;
+        /* border: 2px solid red; */
+    }
+
+    .acTopBox{
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+
+    .acImgBox{
+        height: 60%;
+        width: 45%;
+        background-color: red;
+        margin: 0 0 auto auto;
+        border-radius: 1rem;
+        border: 5px solid royalblue;
+    }
+
+    .acBox1{
+        height: 100%;
+        width: 50%;
+        background-color: royalblue;
+        border-radius: 1rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 5px solid red;
+        border-bottom: none;
+    }
+
+    .acBotBox{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .acBox2{
+        height: 100%;
+        width: 50%;
+        background-color: royalblue;
+        border-bottom-left-radius: 1rem;
+        border: 5px solid red;
+        border-top: none;
+        border-right: none;
+    }
+    .acBox3{
+        height: 100%;
+        width: 50%;
+        background-color: royalblue;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border: 5px solid red;
+        border-left: none;
+
+    }
+
+}
+
