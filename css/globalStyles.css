@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
 
+.noDisplay{
+    display: none;
+}
 
 *{
     margin: 0;
@@ -12,21 +15,258 @@ body{
     background-color: #0b0c10;
 }
 
-@media screen and (min-width: 940px) {
+.headerContent{
+    width: 80%;
+    height: 15vh;
+    /* background-color: whitesmoke; */
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
 
-    .headerContent{
-        width: 80%;
-        height: 15vh;
-        /* background-color: whitesmoke; */
-        color: whitesmoke;
-        margin: 0 auto;
-        margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.headerContent > h1{
+    font-size: 4.5rem;
+}
+
+.headerContent > p{
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #66fcf1;
+}
+
+.pageBreak{
+    width: 75%;
+    height: 1.25rem;
+    background-color: #f0f0f0;
+    margin: 2.5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #45A29E;
+}
+
+.pageBreakCircle{
+    width: 10rem;
+    height: 4rem;
+    background-color: #0b0c10;
+    border-radius: 50%;
+    border: 1rem solid #0b0c10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageBreakInnerCircle{
+    height: 2rem;
+    width: 2rem;
+    background-color: #66fcf1;
+    border-radius: 50%;
+}
+
+.menu{
+    height: 50vh;
+    width: 80%;
+    /* background-color: #66fcf1; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItems{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7.5vh;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #45A29E;
+    border: 5px solid #45A29E;
+    border-top: none;
+}
+
+.navButton{
+    border-radius: 1rem;
+}
+
+.navButton:hover{
+    padding: 1rem 3.5rem;
+    background-color: #45A29E;
+    transition: 0.5s;
+    color: #f0f0f0;
+}
+
+.aboutContainer, .contactContainer, .skillsContainer{
+    width: 85%;
+    height: 50vh;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.acBox1, .acBox2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 65%;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+}
+
+.acBox2{
+    height: 30%;
+    align-items: center;
+}
+
+.acImgCon{
+    height: 100%;
+    width: 50%;
+    background-image: url("../images/aboutMe.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.skillsContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.scColumn1{
+    min-width: 150px;
+    width: 20%;
+    height: 100%;
+    background-color: #45A29E;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    z-index: 10;
+    border-right: 6px solid #f0f0f0;
+}
+
+.scColumn2{
+    min-width: 140px;
+    width: 20%;
+    height: 97.5%;
+    border-radius: 1rem;
+    background-color: #363636;
+    transform: translateX(-5vw);
+    border: 6px solid #45A29E;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.scColumn2 > p{
+    transform: translateX(2.5vw);
+    margin: 1rem 0;
+    font-style: italic;
+    color: #f0f0f0;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.scColumn2 > p:hover{
+    padding: 1rem;
+    color: #363636;
+    background-color: #66fcf1;
+    transition: 0.5s;
+}
+
+.projectsTxt{
+    border-radius: 1rem;
+}
+
+.skillsTxt{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.projectsTxt:hover, .skillsTxt:hover{
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #45A29E;
+    transition: 0.5s;
+}
+
+.activeTab{
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #45A29E;
+    transition: 0.5s;
+}
+
+.activeTab2{
+    padding: 1rem;
+    color: #363636;
+    background-color: #66fcf1;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 820px){
+    .aboutContainer{
+        flex-direction: row;
+    }
+
+    .acBox1, .acBox2{
+        width: 47.5%;
+        height: 97.5%;
+        /* background-color: rebeccapurple; */
+        justify-content: space-evenly;
+        font-size: 1.5rem;
         font-family: 'Raleway', sans-serif;
     }
+    
+    .acBox2{
+        align-items: center;
+    }
+    
+    .acImgCon{
+        width: 40vw;
+        height: 40vw;
+    }   
+}
+
+
+@media screen and (min-width: 940px) {
     
     .headerContent > h1{
         font-size: 6rem;
@@ -37,25 +277,17 @@ body{
         margin-top: 1rem;
     }
 
-    .pageBreak{
-        width: 75%;
-        height: 2rem;
-        background-color: black;
-        margin: 2.5em auto;
-    }
-
     .menu{
         min-width: 795px;
         width: 85%;
         height: 12.5vh;
-        background: rgb(167,167,167);
-        background: linear-gradient(180deg, rgba(167,167,167,1) 0%, rgba(122,122,122,1) 100%);
-        margin: 0 auto;
+        background-color: #f0f0f0;
         border-radius: 1.25rem;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* border: 3px solid #66fcf1; */
+        border-bottom: 3px solid #45A29E;
     }
 
     .navItems{
@@ -64,20 +296,21 @@ body{
         height: 75%;
         /* background-color: cadetblue; */
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         font-family: 'Raleway', sans-serif;
         font-style: italic;
-        color: white;
+        color: #45A29E;
         font-weight: bold;
     }
 
     .navDivider{
         margin: 0 1.5rem;
-        min-width: 3px;
+        min-width: 5px;
         height: 5rem;
-        background-color: #66fcf1;
-        border-radius: 40%;
+        background-color: #45A29E;
+        border-radius: 15%;
     }
 
     .navItem{
@@ -87,80 +320,18 @@ body{
         align-items: center;
         text-align: center;
         /* background-color: rebeccapurple; */
-    }
-
-    .navButton{
-        /* background-color: #66fcf1; */
-        border-radius: 1rem;
+        border: none;
+        background: none;
+        color: #45A29E;
     }
 
     .navButton:hover{
         padding: 2rem;
-        background-color: #66fcf1;
+        background-color: #45A29E;
         transition: 0.5s;
+        color: #f0f0f0;
     }
 
-    .aboutContainer, .contactContainer, .skillsContainer{
-        width: 85%;
-        height: 50vh;
-        /* background-color: whitesmoke; */
-        margin: 0 auto;
-        margin-top: 2rem;
-        border-radius: 1.25rem;
-        /* border: 2px solid red; */
-    }
-
-    .acTopBox{
-        width: 100%;
-        height: 50%;
-        display: flex;
-    }
-
-    .acImgBox{
-        height: 60%;
-        width: 45%;
-        background-color: red;
-        margin: 0 0 auto auto;
-        border-radius: 1rem;
-        border: 5px solid royalblue;
-    }
-
-    .acBox1{
-        height: 100%;
-        width: 50%;
-        background-color: royalblue;
-        border-radius: 1rem;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        border: 5px solid red;
-        border-bottom: none;
-    }
-
-    .acBotBox{
-        display: flex;
-        width: 100%;
-        height: 50%;
-    }
-
-    .acBox2{
-        height: 100%;
-        width: 50%;
-        background-color: royalblue;
-        border-bottom-left-radius: 1rem;
-        border: 5px solid red;
-        border-top: none;
-        border-right: none;
-    }
-    .acBox3{
-        height: 100%;
-        width: 50%;
-        background-color: royalblue;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        border: 5px solid red;
-        border-left: none;
-
-    }
-
+    
 }
 
