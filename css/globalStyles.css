@@ -184,7 +184,6 @@ body{
     height: 97.5%;
     border-radius: 1rem;
     background-color: #363636;
-    transform: translateX(-5vw);
     border: 6px solid #45A29E;
     border-left: none;
     display: flex;
@@ -195,7 +194,6 @@ body{
 }
 
 .scColumn2 > p{
-    transform: translateX(2.5vw);
     margin: 1rem 0;
     font-style: italic;
     color: #f0f0f0;
@@ -236,9 +234,17 @@ body{
 
 .activeTab2{
     padding: 1rem;
-    color: #363636;
+    color: #363636 !important;
     background-color: #66fcf1;
     transition: 0.5s;
+}
+
+.scContent{
+    display: flex;
+    flex-grow: 1;
+    height: 97.5%;
+    background-color: purple;
+    margin: 0 2rem;
 }
 
 @media screen and (min-width: 820px){
