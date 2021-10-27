@@ -70,16 +70,29 @@
     </div>
     <div class="contactContainer">
         <div class="contactCol1">
-            <h1>Send me an email:</h1>
-            <div class="emailControls">
-                <textarea name="" id="fromSender" cols="30" rows="10" placeholder="Enter your email..."></textarea>
-                <button id="sendBtn">Send</button>
+            <header>
+                <h1>Send me an email:</h1>
+            </header>
+            <div class="emailContent">
+                <p>With this form you can leave your reply email address and message for me to contact you back as soon as I possibly can.</p>
+                <div class="emailControls">
+                    <textarea name="" id="fromSender" cols="30" rows="10" placeholder="Enter your email..."></textarea>
+                    <button id="sendBtn">Send</button>
+                </div>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
             </div>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
         </div>
         <div class="contactCol2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi obcaecati assumenda nisi tempora nihil, pariatur autem esse quae, veniam accusamus iste itaque dolorum corrupti animi nam dolores earum blanditiis!</p>
-            <button id="cvBtn">Download my CV</button>
+            <header>
+                <h1> Download My Curriculum Vitae:</h1>
+            </header>
+            <div class="cvContent">
+                <p>Click the button below to download a redacted version of my CV:</p>
+                <div class="cvBtnContainer">
+                    <a id="cvBtn" href="cv/cvTest.txt" download="cvTest.txt">Download my CV</a>
+                </div>
+            </div>
+            
         </div>
     </div>
 
