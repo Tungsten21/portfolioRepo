@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/globalStyles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_W1NhN1orf9nF0P4hIAqlq");
+    })();
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -53,14 +59,28 @@
             <p id="skillsBtn" class="skillsTxt">Skills</p>
         </div>
         <div id="skillsMenu" class="scColumn2">
-            <p id="frontEndBtn">Front End</p>
+            <p id="frontEndBtn" class="activeTab2">Front End</p>
             <p id="backEndBtn">Back End</p>
             <p id="miscBtn">Misc</p>
         </div>
-        <div class="scContent"></div>
+        <div id="skillsContent" class="scContent">
+            <p>These are relevant Front End development skills I have aquired:</p>
+            <div id="skillsContentCon" class="skillsContentContainer"></div>
+        </div>
     </div>
     <div class="contactContainer">
-        Test
+        <div class="contactCol1">
+            <h1>Send me an email:</h1>
+            <div class="emailControls">
+                <textarea name="" id="fromSender" cols="30" rows="10" placeholder="Enter your email..."></textarea>
+                <button id="sendBtn">Send</button>
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+        </div>
+        <div class="contactCol2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi obcaecati assumenda nisi tempora nihil, pariatur autem esse quae, veniam accusamus iste itaque dolorum corrupti animi nam dolores earum blanditiis!</p>
+            <button id="cvBtn">Download my CV</button>
+        </div>
     </div>
 
     <script src="js/scripts.js"></script>
