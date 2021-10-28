@@ -24,8 +24,9 @@ body{
     width: 80%;
     height: 15vh;
     color: whitesmoke;
+    /* background-color: rebeccapurple; */
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,20 +34,22 @@ body{
 }
 
 .headerContent > h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .headerContent > p{
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
     color: #66fcf1;
+    text-align: center;
 }
 
 .pageBreak{
     width: 75%;
-    height: 1.25rem;
+    height: 0.75rem;
     background-color: #f0f0f0;
-    margin: 2.5em auto 1rem auto;
+    margin: 1em auto 1rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +57,7 @@ body{
 }
 
 .pageBreakCircle{
-    width: 8rem;
+    width: 6rem;
     height: 4rem;
     background-color: #0b0c10;
     border-radius: 50%;
@@ -65,8 +68,8 @@ body{
 }
 
 .pageBreakInnerCircle{
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: #66fcf1;
     border-radius: 50%;
 }
@@ -78,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: red; */
 }
 
 .navItems{
@@ -95,11 +99,11 @@ body{
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 7vh;
+    height: 6vh;
     background: rgb(218,218,218);
     background: linear-gradient(32deg, rgba(218,218,218,1) 0%, rgba(224,224,224,1) 35%, rgba(255,255,255,1) 100%);
     border-radius: 1rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #45A29E;
     border: 4px solid #45A29E;
@@ -111,7 +115,7 @@ body{
 }
 
 .navButton:hover{
-    padding: 0.75rem 2.5rem;
+    padding: 0.25rem 0.5rem;
     background-color: #45A29E;
     transition: 0.5s;
     color: #f0f0f0;
@@ -123,7 +127,7 @@ body{
     background: rgb(233,233,233);
     background: radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 67%, rgba(221,221,221,1) 100%);
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -139,7 +143,7 @@ body{
     width: 100%;
     /* background-color: red; */
     justify-content: space-evenly;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 .acBox2{
@@ -156,70 +160,40 @@ body{
 }
 
 .skillsContainer{
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
 .scColumn1{
     min-width: 125px;
-    width: 20%;
-    height: 100%;
+    width: 100%;
+    height: 17.5%;
     background-color: #45A29E;
     border-radius: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #f0f0f0;
     z-index: 10;
-    border-right: 6px solid #f0f0f0;
-}
-
-.scColumn2{
-    min-width: 125px;
-    width: 20%;
-    height: 97.5%;
-    border-radius: 1rem;
-    background-color: #363636;
-    border: 6px solid #45A29E;
-    border-left: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-
-.scColumn2 > p{
-    margin: 1rem 0;
-    font-style: italic;
-    color: #f0f0f0;
-    font-weight: bold;
-    border-radius: 1rem;
-}
-
-.scColumn2 > p:hover{
-    padding: 1rem;
-    color: #363636;
-    background-color: #66fcf1;
-    transition: 0.5s;
+    border-bottom: 6px solid #f0f0f0;
 }
 
 .projectsTxt{
     border-radius: 1rem;
+    margin-right: 0.5rem;
 }
 
 .skillsTxt{
-    margin-top: 2rem;
     border-radius: 1rem;
-    padding: 1rem;
+    margin-left: 0.5rem;
 }
 
 .projectsTxt:hover, .skillsTxt:hover{
-    padding: 1rem;
+    padding: 0.75rem;
     background-color: #f0f0f0;
     color: #45A29E;
     transition: 0.5s;
@@ -232,8 +206,39 @@ body{
     transition: 0.5s;
 }
 
+.scColumn2{
+    min-width: 125px;
+    width: 92.5%;
+    height: 12.5%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #363636;
+    border-bottom: 6px solid #45A29E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+    font-size: 0.75rem;
+}
+
+.scColumn2 > p{
+    color: #f0f0f0;
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    border-radius: 0.75rem;
+    font-style: italic;
+}
+
+.scColumn2 > p:hover{
+    padding: 0.5rem;
+    color: #363636;
+    background-color: #66fcf1;
+    transition: 0.5s;
+}
+
 .activeTab2{
-    padding: 1rem;
+    padding: 0.5rem;
     color: #363636 !important;
     background-color: #66fcf1;
     transition: 0.5s;
@@ -243,7 +248,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
+    height: 62.5%;
     margin: 0 0.5rem;
     justify-content: space-between;
     align-items: center;
@@ -251,9 +256,9 @@ body{
 
 .scContent > p{
     color: #363636;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
-    margin: auto 0;
+    margin-top: 0.25rem;
     font-weight: bold;
     font-style: italic;
 }
@@ -262,8 +267,8 @@ body{
     height: 90%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .skill{
@@ -274,11 +279,11 @@ body{
 }
 
 .skill > h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .skill > p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .outerExpBar{
@@ -300,7 +305,7 @@ body{
 }
 
 .contactCol1, .contactCol2{
-    height: 47.5%;
+    height: 70%;
     width: 97.5%;
     background: rgb(79,200,195);
     background: radial-gradient(circle, rgba(79,200,195,1) 0%, rgba(69,162,158,1) 44%, rgba(41,103,101,1) 100%);
@@ -310,37 +315,52 @@ body{
 
 .contactCol1 > header, .contactCol2 > header {
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+header > h1{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .emailContent, .cvContent{
     width: 97.5%;
-    height: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.cvContent{
+    height: 80%;
+}
+
+.contactCol2 > header {
+    height: 20%;
+}
+
 .emailContent > p, .cvContent > p {
     width: 80%;
-    margin-top: 0.5rem;
+    margin: 0.25rem 0 0.25rem 0;
     text-align: center;
     align-self: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .cvContent > p {
     color: #f0f0f0;
-    margin-bottom: 0.75rem;
+    margin: 0.5rem auto;
+    font-size: 0.8rem;
 }
 
 .emailControls{
     width: 90%;
-    margin: 0.5rem auto 0 auto;
+    margin: 0.75rem auto 0.75rem auto;
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -348,12 +368,11 @@ body{
 
 #fromSender{
     width: 60%;
-    height: 3rem;
+    height: 2.25rem;
     resize: none;
     outline: none;
     overflow: auto;
-    border-radius: 1rem;
-    padding: 0.75rem 0 0 0.5rem;
+    border-radius: 0.75rem;
     font-size: 1rem;
     border-bottom: 4px solid #363636;
     color: #45A29E;
@@ -363,8 +382,8 @@ body{
     outline: none;
     border: none;
     width: 35%;
-    height: 3rem;
-    border-radius: 1rem;
+    height: 2.25rem;
+    border-radius: 0.75rem;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
@@ -374,7 +393,7 @@ body{
 }
 
 #sendBtn:hover{
-    height: 4rem;
+    height: 3rem;
     width: 38%;
     transition: 0.5s;
     background-color: #45A29E;
@@ -384,7 +403,7 @@ body{
 
 #message{
     width: 90%;
-    height: 12.5rem;
+    height: 10rem;
     margin: 0.25rem auto 0 auto;
     outline: none;
     border: none;
@@ -396,49 +415,72 @@ body{
 }
 
 .contactCol2{
+    height: 27.5%;
+    display: flex;
+    flex-direction: column;
     background: rgb(82,82,82);
     background: radial-gradient(circle, rgba(82,82,82,1) 0%, rgba(54,54,54,1) 44%, rgba(28,28,28,1) 100%);
 }
 
 .contactCol2 > header {
     color: #f0f0f0;
+    margin-top: 0.5rem;
 }
 
 .cvBtnContainer{
     width: 100%;
-    height: 12.5rem;
-    margin-top: 1.5rem;
+    height: 2.5rem;
 }
+
 
 #cvBtn{
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 3rem;
+    width: 70%;
+    height: 2.25rem;
     outline: none;
     border: none;
     border-radius: 1rem;
-    margin: 2rem auto 0 auto;
+    margin: 0 auto 0 auto;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     background-color: #45A29E;
     color: #363636;
     border-bottom: 4px solid #f0f0f0;
 }
 
 #cvBtn:hover{
-    height: 4rem;
-    width: 70%;
+    height: 2.6rem;
+    width: 77.5%;
     transition: 0.5s;
     background-color: #363636;
     font-size: 1.5rem;
     color: #f0f0f0;
 }
 
+@media screen and (min-width: 480px){
+    
+    .headerContent > h1{
+        font-size: 2.5rem;
+    }
+    
+    .headerContent > p{
+        font-size: 1.5rem;
+    }
 
+    .acBox1{
+        font-size: 1rem;
+    }
+
+    .cvContent{
+        justify-content: space-evenly;
+    } 
+
+    
+}
 
 
 @media screen and (min-width: 740px){
@@ -456,17 +498,57 @@ body{
     }
     
     .menu{
-        height: 45vh;
-        width: 80%;
+        margin-top: 2rem;
+        width: 85%;
+        height: 10vh;
+        background-color: #f0f0f0;
+        border-radius: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid #45A29E;
     }
-    
-    .navItem{
+
+    .navItems{
+        list-style: none;
         width: 100%;
-        height: 7.5vh;
+        height: 75%;
+        /* background-color: cadetblue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-style: italic;
+        color: #45A29E;
+        font-weight: bold;
     }
-    
+
+    .navDivider{
+        margin: 0 1.5rem;
+        min-width: 5px;
+        height: 5rem;
+        background-color: #45A29E;
+        border-radius: 15%;
+    }
+
+    .navItem{
+        display: flex;
+        float: left;
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+        border: none;
+        background: none;
+        color: #45A29E;
+    }
+
     .navButton:hover{
-        padding: 1rem 3.5rem;
+        padding: 1.5rem;
+    }
+
+    .aboutContainer, .skillsContainer, .contactContainer{
+        margin: 2rem auto;
     }
     
     .acBox1, .acBox2{
@@ -480,13 +562,16 @@ body{
     
     .scColumn2{
         min-width: 140px;
+        font-size: 1rem;
     }
     
     .skillsTxt{
-        margin-top: 2rem;
         border-radius: 1rem;
-        padding: 1rem;
     }
+
+    .scColumn2 > p {
+        width: 20%;
+    } 
     
     .scContent{
         height: 97.5%;
@@ -517,6 +602,23 @@ body{
     
     .outerExpBar{
         height: 1.5rem;
+    }
+
+    .contactContainer{
+        flex-direction: row;
+    }
+
+    .contactCol1, .contactCol2{
+        height: 60%;
+        width: 47.5%;
+    }
+
+    .emailContent > p{
+        font-size: 1rem;
+    }
+
+    .cvContent, .cvContent > p{
+        font-size: 1rem;
     }
 }
 
@@ -555,58 +657,6 @@ body{
     .headerContent > p{
         font-size: 3.5rem;
         margin-top: 1rem;
-    }
-
-    .menu{
-        margin-top: 2rem;
-        min-width: 795px;
-        width: 85%;
-        height: 10vh;
-        background-color: #f0f0f0;
-        border-radius: 1.25rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 3px solid #45A29E;
-    }
-
-    .navItems{
-        list-style: none;
-        width: 100%;
-        height: 75%;
-        /* background-color: cadetblue; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        
-        font-style: italic;
-        color: #45A29E;
-        font-weight: bold;
-    }
-
-    .navDivider{
-        margin: 0 1.5rem;
-        min-width: 5px;
-        height: 5rem;
-        background-color: #45A29E;
-        border-radius: 15%;
-    }
-
-    .navItem{
-        display: flex;
-        float: left;
-        font-size: 2.5rem;
-        align-items: center;
-        text-align: center;
-        border: none;
-        background: none;
-        color: #45A29E;
-    }
-
-    .navButton:hover{
-        padding: 2rem;
     }
 
     .contactContainer{

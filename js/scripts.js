@@ -78,6 +78,7 @@ function attachEventHandlers(){
         }
     })
     attachMenuEventListeners();
+
 }
 
 
