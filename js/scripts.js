@@ -68,11 +68,7 @@ function attachEventHandlers(){
 
     sendBtn.addEventListener('click', ev => {
         if(validateEmail() == true){
-            console.log("passed");
             sendMail();
-            fromSender.value = "";
-            message.value = "";
-            alert("Your message has been sent, thank you!");
         }else{
             alert("Please enter a valid email");
         }
@@ -87,9 +83,16 @@ function closeMenu(){
     while(menu.firstChild){
         menu.removeChild(menu.lastChild);
     }
-    menu.style.width = "0";
-    menu.style.minWidth = "0";
-    menu.style.border = "none";
+
+    if(document.body.offsetWidth > 740){
+        menu.style.width = "0";
+        menu.style.border = "none";
+    }else{
+        menu.style.height = "0";
+        menu.style.border = "none";
+    }
+   
+
 }
 
 function openMenu(){
@@ -109,9 +112,15 @@ function openMenu(){
     menu.appendChild(backEnd);
     menu.appendChild(misc);
 
-    menu.style.removeProperty("width");
-    menu.style.removeProperty("min-width");
-    menu.style.removeProperty("border");
+    if(document.body.offsetWidth > 740){
+        menu.style.removeProperty("width");
+        menu.style.removeProperty("border");
+    }else{
+        menu.style.removeProperty("height");
+        menu.style.removeProperty("border");
+    }
+        
+    
 }
 
 function populateFrontEnd(){
@@ -293,12 +302,22 @@ function validateEmail(){
 
 function sendMail(){
     let message = document.getElementById("fromSender").value;
-    var tempParams = {
-        from_name: document.getElementById("fromSender").value,
-        message: document.getElementById("message").value
-    };
+    let messageLeft = document.getElementById("message").value;
+    if(messageLeft != ""){
+        var tempParams = {
+            from_name: document.getElementById("fromSender").value,
+            message: document.getElementById("message").value
+        };
+        emailjs.send('service_wy3nnou', 'template_1wrp1il', tempParams);
+        alert("Your message has been sent, thank you!");
+        fromSender.value = "";
+        message.value = "";
+    }else{
+        
+        alert("Please enter a message to send");
+    }
 
-    emailjs.send('service_wy3nnou', 'template_1wrp1il', tempParams);
+   
 }
 
 attachEventHandlers();

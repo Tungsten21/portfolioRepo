@@ -49,7 +49,7 @@ body{
     width: 75%;
     height: 0.75rem;
     background-color: #f0f0f0;
-    margin: 1em auto 1rem auto;
+    margin: 2.5rem auto 2.5rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +57,8 @@ body{
 }
 
 .pageBreakCircle{
-    width: 6rem;
-    height: 4rem;
+    width: 5rem;
+    height: 3rem;
     background-color: #0b0c10;
     border-radius: 50%;
     border: 1rem solid #0b0c10;
@@ -108,6 +108,11 @@ body{
     color: #45A29E;
     border: 4px solid #45A29E;
     border-top: none;
+}
+
+.navItem > a {
+    text-decoration: none;
+    color: #45A29E;
 }
 
 .navButton{
@@ -207,7 +212,6 @@ body{
 }
 
 .scColumn2{
-    min-width: 125px;
     width: 92.5%;
     height: 12.5%;
     border-bottom-left-radius: 1rem;
@@ -249,6 +253,7 @@ body{
     flex-direction: column;
     flex-grow: 1;
     height: 62.5%;
+    width: 90%;
     margin: 0 0.5rem;
     justify-content: space-between;
     align-items: center;
@@ -342,6 +347,8 @@ header > h1{
 
 .contactCol2 > header {
     height: 20%;
+    color: #f0f0f0;
+    margin-top: 0.5rem;
 }
 
 .emailContent > p, .cvContent > p {
@@ -420,11 +427,6 @@ header > h1{
     flex-direction: column;
     background: rgb(82,82,82);
     background: radial-gradient(circle, rgba(82,82,82,1) 0%, rgba(54,54,54,1) 44%, rgba(28,28,28,1) 100%);
-}
-
-.contactCol2 > header {
-    color: #f0f0f0;
-    margin-top: 0.5rem;
 }
 
 .cvBtnContainer{
@@ -513,7 +515,7 @@ header > h1{
     .navItems{
         list-style: none;
         width: 100%;
-        height: 75%;
+        height: 100%;
         /* background-color: cadetblue; */
         display: flex;
         flex-direction: row;
@@ -527,12 +529,13 @@ header > h1{
     .navDivider{
         margin: 0 1.5rem;
         min-width: 5px;
-        height: 5rem;
+        height: 70%;
         background-color: #45A29E;
         border-radius: 15%;
     }
 
     .navItem{
+        text-decoration: none;
         display: flex;
         float: left;
         font-size: 2rem;
@@ -541,6 +544,7 @@ header > h1{
         border: none;
         background: none;
         color: #45A29E;
+        height: 100%;
     }
 
     .navButton:hover{
@@ -564,6 +568,8 @@ header > h1{
         width: 15%;
         flex-direction: column;
         font-size: 1.5rem;
+        border: 4px solid #f0f0f0;
+        border-left: none;
     }
 
     .scColumn1 > p{
@@ -571,11 +577,16 @@ header > h1{
     }
     
     .scColumn2{
-        height: 97.5%;
-        width: 10%;
+        height: 95%;
+        width: 12.5%;
         flex-direction: column;
         font-size: 1rem;
         justify-content: center;
+        border-radius: 1rem;
+        border-bottom: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-right: 4px solid #45A29E;
     }
 
     .scColumn2 > p:hover, .activeTab2{
@@ -588,12 +599,14 @@ header > h1{
 
     .scColumn2 > p {
         width: 90%;
+        font-size: 0.85rem;
         margin: 2rem 0;
     } 
     
     .scContent{
         height: 97.5%;
         margin: 2rem 1rem;
+        width: 70%;
     }
     
     .scContent > p{
@@ -629,6 +642,11 @@ header > h1{
     .contactCol1, .contactCol2{
         height: 60%;
         width: 47.5%;
+    }
+
+    .contactCol2 > header {
+        height: 15%;
+        margin-top: 0;
     }
 
     .emailContent > p{
@@ -675,6 +693,10 @@ header > h1{
     .headerContent > p{
         font-size: 3.5rem;
         margin-top: 1rem;
+    }
+
+    .scColumn2 > p {
+        font-size: 1.1rem;
     }
 
     .contactContainer{
